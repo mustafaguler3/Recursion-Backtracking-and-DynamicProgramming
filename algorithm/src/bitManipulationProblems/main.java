@@ -18,4 +18,23 @@ public class main {
         }
         return counter;
     }
+
+
+    // 1010 = (10)
+    //0001 = 1
+
+
+    //O(1)
+    //usually the % module operator is used
+    public static boolean isEven(int n){
+
+        if (n % 2 == 0) return true;
+
+        //XOR operator with 1 decrements the value for odd numbers
+        //XOR operator with 1 increment the value for even numbers
+        if ((n ^ 1) == n + 1){
+            return true;
+        }
+        return false;
+    }
 }
